@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { HackernewsApiService } from './hackernews-api.service';
+import { HackerNewsAPIService } from './hackernews-api.service';
 
-describe('HackernewsApiService', () => {
+describe('HackerNewsAPIService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [HackernewsApiService]
+      providers: [HackerNewsAPIService]
     });
   });
 
-  it('should be created', inject([HackernewsApiService], (service: HackernewsApiService) => {
+  it('should be created', inject([HackerNewsAPIService], (service: HackerNewsAPIService) => {
     expect(service).toBeTruthy();
   }));
 });

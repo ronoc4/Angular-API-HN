@@ -8,10 +8,15 @@ import { HeaderComponent } from './header/header.component';
 import { StoriesComponent } from './stories/stories.component';
 import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
-import {HackernewsApiService} from "./hackernews-api.service";
-import {MomentModule} from "angular2-moment";
-import {DomainPipe} from "./domain.pipe";
-import {BusyModule} from "angular2-busy";
+
+import {HackerNewsAPIService} from './hackernews-api.service';
+import {ItemcommentsComponent} from "./item-comments/item-comments.component";
+import {routing} from "./app.routes";
+import { CommentTreeComponent } from './commenttree/commenttree.component';
+import { CommentComponent } from './comment/comment.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -20,16 +25,17 @@ import {BusyModule} from "angular2-busy";
     StoriesComponent,
     FooterComponent,
     ItemComponent,
-    DomainPipe
+    ItemcommentsComponent,
+    CommentTreeComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MomentModule,
-    BusyModule
+    routing
   ],
-  providers: [HackernewsApiService],
+  providers: [HackerNewsAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
