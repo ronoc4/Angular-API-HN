@@ -71,6 +71,9 @@ a {
 }
 
 .item-mobile {
+  &:first-of-type {
+    margin-top: 60px;
+  }
   @media #{$laptop-only} {
     display: none;
   }

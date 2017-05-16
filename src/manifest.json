@@ -1,6 +1,6 @@
 {
-  "name": "Angular API HN",
-  "short_name": "Angular API HN",
+  "name": "Conor's Angular API HN",
+  "short_name": "Conor's Angular API HN",
   "icons": [
     {
       "src": "assets/icons/android-chrome-192x192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "theme_color": "#b92b27",
-  "background_color": "#ffffff",
+  "background_color": "#fbb850",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "./?utm_source=web_app_manifest"
